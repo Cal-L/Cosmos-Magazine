@@ -1,0 +1,13 @@
+
+<div ng-controller="ProductController as magazine">
+	<div class="magContainer" ng-repeat="product in magazine.products">
+		<img ng-src="{{product.image}}"/></br>
+		<b>{{product.company}}</b></br>
+		{{product.time}} for <em>{{product.price | currency}}</em></br>
+		<a href="#">
+			<div class="button">
+				<span class="skinny">Subscribe</span>
+			</div>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,156 @@
+$bg: #504A4B;
+$lg: #E8E8E8;
+$nbc: #000033;
+$black: #000000;
+$white: #FFFFFF;
+$ff: 'arial';
+$mf: 'Verdana', Geneva, sans-serif;
+
+@font-face {
+    font-family: 'coco'; /*a name to be used later*/
+    src: url('../fonts/Cocomat Light-trial.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bebas'; /*a name to be used later*/
+    src: url('../fonts/BebasNeue.otf'); /*URL to font*/
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+}
+
+.skinny {
+	font-family: coco;
+	color: $white;
+}
+
+.navbar {
+	min-width: 800px;
+	font-family: bebas;
+	width: 100%;
+	height: 75px;
+	color: $white;
+	background-color: $black;
+	position: fixed;
+	z-index: 100;
+	.menu {
+		padding-right: 45px;
+	}
+	span {
+		float: right;
+		line-height: 75px;
+		padding-left: 40px;
+		font-size: 25px;
+	}
+	img {
+		padding-top: 15px;
+		padding-left: 50px;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.content {
+	position: relative;
+	font-family: $ff;
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	clear: both;
+	.form {
+		overflow: hidden;
+		width: 100%;
+		height: 450px;
+		background-color: $lg;
+		form {
+			font-family: bebas !important;
+			font-size: 20px;
+			width: 500px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			input {
+				margin-bottom: 20px;
+				width: 100%;
+			}
+			textarea {
+				width: 100%;
+				height: 150px;
+				margin-bottom: 20px;
+				resize: none;
+			}
+			.submit {
+				width: 100px !important;
+				float: right;
+			}
+		}
+	}
+}
+
+.button {
+	width: 125px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: $black;
+	border: 2px solid $bg;
+	margin: auto;
+}
+
+.magContainer {
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	background-color: $lg;
+	img {
+		padding-top: 20px;
+	}
+	div {
+		margin-bottom: 20px;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.header-image {
+	margin-top: -75px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.footer {
+	bottom: 0px;
+	width: 100%;
+	height: 150px;
+	background: $white;
+	clear: both;
+	position: relative;
+	.innerBox {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		background-color: $white;
+	}
+	.icon {
+		float: left;
+		margin: 5px;
+	}
+}
